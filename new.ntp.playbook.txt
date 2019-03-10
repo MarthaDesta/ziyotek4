@@ -1,0 +1,16 @@
+--- 
+? "-hosts"
+: template
+become: true
+remote_user: ansible
+tasks: 
+  - 
+    name: ntp
+    state: latest
+    yum: ~
+  - 
+    name: "configure ntp"
+    notify: "restart ntpd"
+    template: 
+      dest: /etc/ntp.conf
+      src: /home/ansible/ansible/template/ntp.conf.j2
