@@ -17,6 +17,6 @@ prdx-nsworker14		IN	A	 192.168.40.175
 	
 ;;;; Servers
 
-;chrony		IN	A	192.168.1.97	
+	
 
 ;;; Virtual web hosts on sever devx-web02
